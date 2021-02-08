@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import Fab from '@material-ui/core/Fab';
 
+import ITyped from 'react-ityped';
+
 export default function Header() {
     const classes = useStyles()
     const [height, setHeight] = useState()
@@ -18,10 +20,20 @@ export default function Header() {
         updateDimensions()
     })
 
+    const strings = ['Product Manager', 'Freelance React Developer', 'YouTube Content Creator']
+
     return (
         <div className={classes.header} style={{"height": height}}>
             <h3 className={classes.headerTextMain}>Kristen Fang</h3>
-            <h6 className={classes.headerTextSub}>Product Manager</h6>
+            <h5 className={classes.headerTextSub}>I'm a </h5>
+            <ITyped className={classes.headerTextSub}
+                showCursor={false}
+                strings={strings}
+                typeSpeed={100}
+                backSpeed={50}
+                startDelay={100}
+                backDelay={1000}
+            />
             <Fab className={classes.btn} size="small">
                 <KeyboardArrowDownIcon />
             </Fab>
@@ -30,7 +42,7 @@ export default function Header() {
 }
 
 const textColor = 'white'
-const bgcolor = "black"
+const bgcolor = 'black'
 
 const useStyles = makeStyles((theme) => ({
     header: {
