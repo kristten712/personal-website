@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Box } from '@material-ui/core/'
 
 // theme
