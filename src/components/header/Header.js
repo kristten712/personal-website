@@ -1,29 +1,23 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import Fab from '@material-ui/core/Fab';
-
 import ITyped from 'react-ityped';
+import { useSite } from '../../context/SiteContext'
 
 export default function Header() {
     const classes = useStyles()
-    const [height, setHeight] = useState()
-    const [scrollTo, setScrollTo] = useState()
-
-    function updateDimensions() {
-        setHeight(window.innerHeight + 'px')
-        setScrollTo(window.innerHeight)
-    }
-
-    useEffect(() => {
-        window.addEventListener("resize", updateDimensions(this));
-        updateDimensions()
-    })
+    // const [scrollTo, setScrollTo] = useState()
+    const { browserHeight } = useSite()
 
     const strings = ['Product Manager', 'Freelance React Developer', 'YouTube Content Creator']
 
+    // function handleScroll() {
+        // setScrollTo
+    // }
+
     return (
-        <div className={classes.header} style={{"height": height}}>
+        <div className={classes.header} style={{"height": browserHeight + 'px'}}>
             <h3 className={classes.headerTextMain}>Kristen Fang</h3>
             <h5 className={classes.headerTextSub}>I'm a </h5>
             <ITyped className={classes.headerTextSub}
@@ -48,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     header: {
         textAlign: "center",
         alignItems: 'center',
-        position: "absolute",
+        // position: "absolute",
         width: "100%",
         backgroundColor: bgcolor,
         display: "flex",
@@ -57,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
     btn: {
         position: "absolute",
-        bottom: theme.spacing(2),
+        bottom: theme.spacing(4),
     },
     headerTextMain: {
         fontWeight: 300,
