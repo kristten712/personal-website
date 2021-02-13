@@ -1,63 +1,46 @@
-// TODO:
-// - make profile picture resizable
-// - make website mobile friendly with grid sizing 
-
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Avatar, Grid, Box } from '@material-ui/core';
+import { Grid, Box } from '@material-ui/core';
 import ProfileImage from '../../images/profile-1.jpg'
 import { useSite } from '../../context/SiteContext'
+import Image from 'material-ui-image'
 
 export default function Introduction() {
     const classes = useStyles()
-    const { browserHeight, bio } = useSite()
-    const paddingHeight = 6
+    const { bio } = useSite()
 
     return (
-    <div className={classes.container} style={{"height": browserHeight*0.6 + 'px'}}>
-        <Grid 
-            container 
-            spacing={2}          
-            direction="row"
-            justify="center"
-            alignItems="center"
-        >                
-            <Grid item xs={3} className={classes.gridItem}>
-                <Box pt={paddingHeight}>
-                    <Avatar alt="Kristen Fang" src={ProfileImage} className={classes.image} />
-                </Box>
+        <div className={classes.root}>
+            <Grid container spacing={2} justify="center" alignItems="center">
+                <Grid item xs={12} sm={3} align="center">
+                    <Box className={classes.boxImage}>
+                    <Image src={ProfileImage} />
+                    </Box>
+                </Grid>
+                
+                <Grid item xs={12} sm={6}>
+                    <Box className={classes.box}>{bio}</Box>
+                </Grid>
             </Grid>
-
-            <Grid item xs={6}>
-                <Box pt={paddingHeight}>
-                    <p>{bio}</p>
-                </Box>
-            </Grid>
-
-            
-        </Grid>
-    </div>
+      </div>
     )
 }
 
-// const textColor = 'black'
 const bgcolor = '#ffeae0'
 
 const useStyles = makeStyles((theme) => ({
-    container: {
-        width: "100%",
-        backgroundColor: bgcolor,
+    root: {
+      flexGrow: 1,
+      backgroundColor: bgcolor,
     },
-    paper: {
-        padding: theme.spacing(10),
-        alignItems: "center"
+    box: {
+      padding: theme.spacing(2),
+      textAlign: 'center',
     },
-    gridItem: {
-        // margin: "auto"
-    },
-    image: {
-        width: theme.spacing(25),
-        height: theme.spacing(25),
-        // TODO: resize image with browser
+    boxImage: {
+        padding: theme.spacing(2),
+        height: theme.spacing(27),
+        width: theme.spacing(27),
+        alignContent: 'center'
     }
   }));

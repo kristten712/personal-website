@@ -10,8 +10,7 @@ import { SiteProvider } from './context/SiteContext'
 // components 
 import Header from './components/header/Header'
 import Introduction from './components/introduction/Introduction'
-
-// remove da box shit below :) 
+import Timeline from './components/timeline/Timeline'
 
 class App extends Component {
   render() {
@@ -24,13 +23,16 @@ class App extends Component {
             <Grid item xs={12}>
               <Header />
             </Grid>
-        
+
             <Grid item xs={12}>
               <Introduction />
             </Grid>
+
+            <Grid item xs={12}>
+              <Timeline />
+            </Grid>
         
-          </Grid>       
-        
+          </Grid>               
         </SiteProvider> 
       </ThemeProvider>
     );

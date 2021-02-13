@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
     btn: {
         position: "absolute",
-        bottom: theme.spacing(4),
+        bottom: theme.spacing(5), // MAKE ThiS DYNAMIC 
     },
     headerTextMain: {
         fontWeight: 300,

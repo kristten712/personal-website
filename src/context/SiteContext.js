@@ -9,10 +9,11 @@ export function useSite() {
 
 export function SiteProvider({ children }) {
     const [browserHeight, setBrowserHeight] = useState()
+    const [browserWidth, setBrowserWidth] = useState()
 
     function updateDimensions() {
         setBrowserHeight(window.innerHeight)
-        // setScrollTo(window.innerHeight)
+        setBrowserWidth(window.innterWidth)
     }
 
     useEffect(() => {
@@ -23,6 +24,7 @@ export function SiteProvider({ children }) {
 
     const value = {
         browserHeight,
+        browserWidth,
         bio
     }
 
