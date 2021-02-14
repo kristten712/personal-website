@@ -7,19 +7,17 @@ import Introduction from './introduction/Introduction'
 import TimelineContainer from './timeline/TimelineContainer'
 
 export default function Main() {
-    // const refIntro = useRef(null)
-    // const refExp = useRef(null)
-
+    const appBarHeight = 50 // to standardize and pass to introduction & menubar components
     function handleScroll(id) {
         document.querySelector(`#${id}`).scrollIntoView({ behavior: 'smooth' })
     }
 
     return (
     <>
-    <MenuBar handleScroll={handleScroll} />
+    <MenuBar handleScroll={handleScroll} appBarHeight={appBarHeight} />
         <Grid container spacing={0}>
             <Grid item xs={12} id="bio">
-                <Introduction />
+                <Introduction appBarHeight={appBarHeight} />
             </Grid>
             <Grid item xs={12} id='experience'>
                 <TimelineContainer />

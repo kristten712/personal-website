@@ -1,17 +1,18 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Box } from '@material-ui/core';
-import ProfileImage from '../../images/profile-1.jpg'
+import { makeStyles } from '@material-ui/core/styles'
+import { Grid, Box } from '@material-ui/core'
+import ProfileImage from '../../images/profile-2.jpg'
 import { useSite } from '../../context/SiteContext'
 import Image from 'material-ui-image'
 
-export default function Introduction() {
+export default function Introduction({ appBarHeight }) {
     const classes = useStyles()
     const { bio } = useSite()
 
     return (
         <div className={classes.root}>
             <Grid container spacing={2} justify="center" alignItems="center">
+                <Grid item xs={12} style={{ "height": appBarHeight + 25 + 'px' }}></Grid>
                 <Grid item xs={12} sm={3} align="center">
                     <Box className={classes.boxImage}>
                     <Image src={ProfileImage} />
@@ -21,6 +22,7 @@ export default function Introduction() {
                 <Grid item xs={12} sm={6}>
                     <Box className={classes.box}>{bio}</Box>
                 </Grid>
+                <Grid item xs={12} style={{ "height": appBarHeight + 25 + 'px' }}></Grid>
             </Grid>
       </div>
     )
