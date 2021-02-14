@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import MenuBar from './menu/MenuBar'
 import Introduction from './introduction/Introduction'
 import TimelineContainer from './timeline/TimelineContainer'
+import Projects from './projects/Projects'
 
 export default function Main() {
     const appBarHeight = 50 // to standardize and pass to introduction & menubar components
@@ -21,6 +22,9 @@ export default function Main() {
             </Grid>
             <Grid item xs={12} id='experience'>
                 <TimelineContainer />
+            </Grid>
+            <Grid item xs={12} id='experience'>
+                <Projects />
             </Grid>
         </Grid>  
     </>
