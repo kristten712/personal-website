@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { bio } from './Text'
+import { bio, workExperience, education } from './Text'
 
 const SiteContext = React.createContext()
 
@@ -25,7 +25,9 @@ export function SiteProvider({ children }) {
     const value = {
         browserHeight,
         browserWidth,
-        bio
+        bio,
+        workExperience,
+        education
     }
 
     return (

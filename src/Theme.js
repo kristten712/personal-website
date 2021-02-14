@@ -2,17 +2,24 @@ import { unstable_createMuiStrictModeTheme as createMuiTheme } from '@material-u
 // import { createMuiTheme } from '@material-ui/core/styles'
 
 export const theme = createMuiTheme({
-    // typography: {
+  overrides: {
+    MuiTimelineItem: {
+      missingOppositeContent: {
+        "&:before": {
+          display: "none"
+        }
+      }
+    },
+  },
+  palette: {
+    // action: {
+    //   hover: '#f0f8ff'
     // },
-    // // palette: {
-    // //   action: {
-    // //     hover: '#f0f8ff'
-    // //   },
-    // //   primary: {
-    // //     main: '#01579b'
-    // //   },
-    // //   secondary: {
-    // //     main: '#ef9a9a',
-    // //   },
-    // }
+    primary: {
+      main: '#ffeae0',
+    },
+    secondary: {
+      main: '#ef9c84',
+    },
+  }
   });
