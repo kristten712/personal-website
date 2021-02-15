@@ -17,7 +17,7 @@ export default function Footer({ handleScroll }) {
     <div className={classes.root}>
         <Box className={classes.box}>
             <footer className={classes.footer}>
-                <IconButton size="large" onClick={() => scroll()}>
+                <IconButton onClick={() => scroll()}>
                     <ExpandLessIcon />
                 </IconButton>
                 <Typography variant="body1" component="h3">
