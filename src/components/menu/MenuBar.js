@@ -17,6 +17,8 @@ import YouTubeIcon from '@material-ui/icons/YouTube'
 import { faMedium } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+const menuBarColor = "#6B4740"
+
 export default function MenuBar({ handleScroll, appBarHeight }) {
     const classes = useStyles()
 
@@ -34,12 +36,12 @@ export default function MenuBar({ handleScroll, appBarHeight }) {
             <Toolbar>
             <Box display='flex' flexGrow={1}>
                 <IconButton>
-                    <HomeIcon style={{ color: '#8e5c55' }} />
+                    <HomeIcon style={{ color: menuBarColor }} />
                 </IconButton>
                 {menuListItems.map((item, index) => (
                     <List key={index} component="nav" onClick={() => scroll(item.anchor)}>
                         <ListItem button>
-                            <ListItemText primary={item.name} style={{ color: '#8e5c55' }} />
+                            <ListItemText primary={item.name} style={{ color: menuBarColor }} />
                         </ListItem>
                     </List>
                 ))}
@@ -61,22 +63,24 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+
+
 const socialLinks = [
     {
         url: 'https://www.linkedin.com/in/kristen-fang/',
-        icon: <LinkedInIcon style={{ color: '#8e5c55' }} />
+        icon: <LinkedInIcon style={{ color: menuBarColor }} />
     },
     {
         url: 'https://github.com/kristten712/',
-        icon: <GitHubIcon style={{ color: '#8e5c55' }} />,
+        icon: <GitHubIcon style={{ color: menuBarColor }} />,
     },
     {
         url: 'https://medium.com/@fang.kristen',
-        icon:  <FontAwesomeIcon icon={faMedium} style={{ color: '#8e5c55' }} /> 
+        icon:  <FontAwesomeIcon icon={faMedium} style={{ color: menuBarColor }} /> 
     },
     {
         url: 'https://www.youtube.com/c/CollegeLead?sub_confirmation=1',
-        icon: <YouTubeIcon style={{ color: '#8e5c55' }} />
+        icon: <YouTubeIcon style={{ color: menuBarColor }} />
     }
 ]
 

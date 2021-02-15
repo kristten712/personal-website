@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import MediumTile from './MediumTile'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
+import Emoji from 'a11y-react-emoji'
 
 
 export default function Blog({ appBarHeight }) {
@@ -21,24 +22,25 @@ export default function Blog({ appBarHeight }) {
       
   return (
     <div className={classes.root}>
-      <Box py={3}>
-        <Typography
-          align="center"
-          variant="h4"
-          style={{ color: "#413a3f" }}
-        >
-          Blog 
-        </Typography>
-      </Box>
-      <Grid container spacing={2} justify="center" alignItems="center"
-      >
-          {mediumData.map((item, index) => (
-            <Grid item xs={4} key={index}>
-              <MediumTile item={item} />
-            </Grid>
-          ))}
-          <Grid item xs={12} style={{ "height": appBarHeight - 20 + 'px' }} />
+      <Grid container spacing={2} justify="center" alignItems="center">
+        <Grid item xs={12}>
+          <Box py={4}>
+            <Typography
+              align="center"
+              variant="h5"
+              style={{ color: "#6B4740" }}
+            >
+              Sometimes, I like to write <Emoji symbol="✍️" label="write" /> about my experiences  
+            </Typography>
+          </Box>
         </Grid>
+            {mediumData.map((item, index) => (
+              <Grid item xs={12} s={4} key={index}>
+                <MediumTile item={item} />
+              </Grid>
+            ))}
+          <Grid item xs={12} style={{ "height": appBarHeight - 10 + 'px' }} />
+      </Grid>
     </div>
   )
 }
@@ -50,10 +52,4 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
       backgroundColor: bgcolor,
     },
-    cardContainer: {
-        maxWidth: 345,
-    },
-    media: {
-        height: 140,
-      },
   }));

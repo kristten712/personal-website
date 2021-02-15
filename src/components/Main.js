@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import MenuBar from './menu/MenuBar'
 import Introduction from './introduction/Introduction'
 import TimelineContainer from './timeline/TimelineContainer'
-import Blog from './projects/Blog'
+import MediumContainer from './projects/MediumContainer'
 import Footer from './footer/Footer'
 
 export default function Main() {
@@ -33,7 +33,7 @@ export default function Main() {
                 <TimelineContainer />
             </Grid>
             <Grid item xs={12} id='blog'>
-                <Blog appBarHeight={appBarHeight} />
+                <MediumContainer appBarHeight={appBarHeight} />
             </Grid>
             <Grid item xs={12} id='blog' className={classes.footer}>
                 <Footer handleScroll={handleScroll} />

@@ -43,13 +43,7 @@ export default function MediumTile({ item }) {
     )
 }
 
-const bgcolor = '#cec0c0'
-
 const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      backgroundColor: bgcolor,
-    },
     cardContainer: {
         maxWidth: 345,
     },

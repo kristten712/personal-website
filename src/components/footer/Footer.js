@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 
+import Emoji from 'a11y-react-emoji'
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 import IconButton from '@material-ui/core/IconButton'
 
@@ -21,7 +22,14 @@ export default function Footer({ handleScroll }) {
                     <ExpandLessIcon />
                 </IconButton>
                 <Typography variant="body1" component="h3">
-                    React App with Material UI
+                    Made with <Emoji symbol="💕" label="love" /> in React with Material UI 
+                </Typography>
+                <Typography variant="body2" component="h3">
+                    Fork <Emoji symbol="🍴" label="fork" /> the&nbsp;
+                    <a href="https://github.com/kristten712/personal-website" target="_blank" rel="noreferrer noopener"> 
+                         source code 
+                    </a> 
+                    &nbsp;for this project
                 </Typography>
                 <Typography variant="caption" component="p">
                     @2021 All right reserved
