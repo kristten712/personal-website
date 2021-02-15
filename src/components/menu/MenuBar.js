@@ -95,7 +95,7 @@ const menuListItems = [
     },
     {
         name: 'Blog',
-        anchor: ''
+        anchor: 'blog'
     },
     {
         name: 'Contact',
