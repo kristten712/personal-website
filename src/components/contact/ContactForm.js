@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles'
 
 export default function ContactForm() {
     const classes = useStyles()
+    const [success, setSuccess] = useState(false);
 
-    function formSubmit(e) {
-        e.preventDefault()
+    useEffect(() => {
+      if ( window.location.search.includes('success=true') ) {
+        setSuccess(true)
         alert(`Thank you for contacting me! I'll get back to you as soon as I can.`)
-    }
+      }
+    }, []);
     
     return (
     <>
