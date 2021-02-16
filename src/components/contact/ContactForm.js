@@ -9,10 +9,13 @@ export default function ContactForm() {
 
     useEffect(() => {
       if ( window.location.search.includes('success=true') ) {
-        alert(`Thank you for contacting me! I'll get back to you as soon as I can.`)
         setSuccess(true)
       }
     }, []);
+
+    function successMessage() {
+        alert(`Thank you for contacting me! I'll get back to you as soon as I can.`)
+    }
     
     return (
     <>
@@ -21,6 +24,7 @@ export default function ContactForm() {
         method="POST" 
         data-netlify="true" 
         className={classes.root}
+        onSubmit={() => successMessage()}
      >
      <input type="hidden" name="form-name" value="contact" />
         <TextField 
