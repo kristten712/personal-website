@@ -9,8 +9,8 @@ export default function ContactForm() {
 
     useEffect(() => {
       if ( window.location.search.includes('success=true') ) {
-        setSuccess(true)
         alert(`Thank you for contacting me! I'll get back to you as soon as I can.`)
+        setSuccess(true)
       }
     }, []);
     
