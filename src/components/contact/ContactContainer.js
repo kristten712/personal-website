@@ -16,7 +16,7 @@ export default function FullWidthGrid({ appBarHeight }) {
             <Box pt={4}>
                 <Typography
                 align="center"
-                variant="h6"
+                variant="h5"
                 style={{ color: "#6B4740" }}
                 >
                 <Emoji symbol="📬" label="mail" /> Contact me     
@@ -36,9 +36,12 @@ export default function FullWidthGrid({ appBarHeight }) {
   );
 }
 
+// const bgColor = '#cec0c0'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+   //  backgroundColor: bgColor
   },
   gridItem: {
     padding: theme.spacing(2),

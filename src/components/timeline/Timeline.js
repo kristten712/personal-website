@@ -24,7 +24,7 @@ export default function CustomizedTimeline() {
                 <TimelineDot color="secondary">
                     {experience.icon}
                 </TimelineDot>
-                <TimelineConnector />
+                <TimelineConnector className={classes.connector} />
             </TimelineSeparator>
             <TimelineContent>
                 <Paper elevation={3} className={classes.paper}>
@@ -50,7 +50,7 @@ export default function CustomizedTimeline() {
                         {`${education.degree}, ${education.university}`}
                     </Typography>
                     <Typography variant="body2" style={{display: 'block'}}> 
-                        {`Key Coursework: ${education.coursework}`} 
+                        {education.coursework} 
                     </Typography>
                 </Paper>
             </TimelineContent>
@@ -63,4 +63,7 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       padding: '6px 16px',
     },
+    connector: {
+        height: theme.spacing(6)
+    }
   }));

@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import React, { useState, useEffect } from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
+import Typography from '@material-ui/core/Typography'
 import Emoji from 'a11y-react-emoji'
 import MediumTile from './MediumTile'
 
 export default function FullWidthGrid({ appBarHeight }) {
-  const classes = useStyles();
+  const classes = useStyles()
 
   const mediumRSS = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40fang.kristen&api_key=xpjle8iutxjiok3ukbomuccihlwiwr85ibffsosw`
 
@@ -27,10 +27,10 @@ export default function FullWidthGrid({ appBarHeight }) {
             <Box py={4}>
                 <Typography
                 align="center"
-                variant="h6"
+                variant="h5"
                 style={{ color: "#6B4740" }}
                 >
-                Sometimes, I like to write <Emoji symbol="✍️" label="write" /> about my experiences  
+                Sometimes, I like to write <Emoji symbol="✍️" label="write" />  
                 </Typography>
             </Box>
         </Grid>
@@ -49,7 +49,7 @@ export default function FullWidthGrid({ appBarHeight }) {
   );
 }
 
-const bgcolor = '#cec0c0'
+const bgcolor = '#d7e0e0'
 
 const useStyles = makeStyles((theme) => ({
     root: {

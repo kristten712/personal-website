@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid, Box } from '@material-ui/core'
-import ProfileImage from '../../images/profile-2.jpg'
+import ProfileImage from '../../images/profile-4.JPG'
 import { useSite } from '../../context/SiteContext'
 import Image from 'material-ui-image'
 

@@ -4,10 +4,12 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Emoji from 'a11y-react-emoji'
-import ProjectTile from './ProjectTile'
+// import ProjectTile from './ProjectTile'
+import { useSite } from '../../context/SiteContext'
 
 export default function FullWidthGrid({ appBarHeight }) {
-  const classes = useStyles();
+  const classes = useStyles()
+  const { projects } = useSite()
 
   return (
     <div className={classes.root}>
@@ -16,7 +18,7 @@ export default function FullWidthGrid({ appBarHeight }) {
             <Box py={4}>
                 <Typography
                 align="center"
-                variant="h6"
+                variant="h5"
                 style={{ color: "#6B4740" }}
                 >
                 Here are a few projects <Emoji symbol="💻" label="laptop" /> I've been up to   
@@ -24,13 +26,19 @@ export default function FullWidthGrid({ appBarHeight }) {
             </Box>
         </Grid>
 
-        {projects.map((project, index) => (
+        <Grid item xs={12} sm={4} className={classes.gridItem}>
+              <Grid container justify="center" alignItems="center">
+                Coming soon!
+              </Grid>
+        </Grid>
+
+        {/* {projects.map((project, index) => (
           <Grid key={index} item xs={12} sm={4} className={classes.gridItem}>
               <Grid container justify="center" alignItems="center">
                 <ProjectTile project={project} />
               </Grid>
           </Grid>
-        ))}
+        ))} */}
 
         <Grid item xs={12} style={{ "height": appBarHeight - 10 + 'px' }} />
       </Grid>
@@ -38,7 +46,7 @@ export default function FullWidthGrid({ appBarHeight }) {
   );
 }
 
-const bgcolor = '#d7e0e0'
+const bgcolor = '#cec0c0'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,19 +60,3 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const projects = [
-  {
-    title: 'React Form Validation',
-    languages: 'React with Material UI',
-    description: 'Descripition here',
-    url: 'https://github.com/kristten712/',
-    demo: 'https://github.com/kristten712/'
-  },
-  {
-    title: 'Classy Minimal B&W Header',
-    languages: 'React with Material UI',
-    description: 'Potential header for a personal website with typing action',
-    url: 'https://github.com/kristten712/',
-    demo: 'https://github.com/kristten712/'
-  },
-]
