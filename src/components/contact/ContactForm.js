@@ -57,7 +57,6 @@ export default function ContactForm() {
             variant="contained" 
             color="secondary"
             className={classes.button}
-            onClick={(e) => formSubmit(e)} 
         >
             Submit
         </Button>
