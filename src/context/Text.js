@@ -1,8 +1,8 @@
 // icons 
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import BarChartIcon from '@material-ui/icons/BarChart';
-import SchoolIcon from '@material-ui/icons/School';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney'
+import LaptopMacIcon from '@material-ui/icons/LaptopMac'
+import BarChartIcon from '@material-ui/icons/BarChart'
+import SchoolIcon from '@material-ui/icons/School'
 
 const iconColor = 'white'
 
@@ -14,7 +14,7 @@ export const workExperience = [
         position: 'Associate Technical Product Manager',
         company: 'Cengage',
         time: 'May 2020 - Present',
-        description: `I am one of two TPMs responsible for Cengage's platforms for STEM disciplines. We serve over ### students and ### instructors every year.`,
+        description: `I am one of two TPMs responsible for Cengage's platforms for STEM disciplines. We serve ~2M students and instructors every year.`,
         icon: <LaptopMacIcon style={{ color: iconColor }} />
     },
     {

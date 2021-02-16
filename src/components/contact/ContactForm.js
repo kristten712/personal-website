@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 export default function ContactForm() {
     const classes = useStyles()
-    const [success, setSuccess] = useState(false);
+    const [success, setSuccess] = useState(false)
 
     useEffect(() => {
       if ( window.location.search.includes('success=true') ) {
@@ -24,7 +24,7 @@ export default function ContactForm() {
         method="POST" 
         data-netlify="true" 
         className={classes.root}
-        onSubmit={() => successMessage()}
+        onSubmit={() => successMessage(success)}
      >
      <input type="hidden" name="form-name" value="contact" />
         <TextField 
