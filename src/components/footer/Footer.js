@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
     box: {
         padding: theme.spacing(2),
         textAlign: 'center',
+        justify: 'center'
     },
     footer: {
         marginTop: theme.spacing(2),

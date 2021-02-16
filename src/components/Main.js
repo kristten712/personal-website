@@ -9,7 +9,7 @@ import TimelineContainer from './timeline/TimelineContainer'
 import MediumContainer from './blog/MediumContainer'
 import Footer from './footer/Footer'
 import ProjectsContainer from './projects/ProjectsContainer'
-import ContactForm from './contact/ContactForm'
+import ContactContainer from './contact/ContactContainer'
 
 export default function Main() {
     const appBarHeight = 50 // to standardize and pass to introduction & menubar components
@@ -41,7 +41,7 @@ export default function Main() {
                 <ProjectsContainer />
             </Grid>
             <Grid item xs={12} id='projects'>
-                <ContactForm />
+                <ContactContainer appBarHeight={appBarHeight} />
             </Grid>
             <Grid item xs={12} id='blog' className={classes.footer}>
                 <Footer />

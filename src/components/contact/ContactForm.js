@@ -1,36 +1,79 @@
-import React, { useState, useEffect } from 'react'
-import Container from '@material-ui/core/Container'
+import React from 'react'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-import Card from '@material-ui/core/Card'
+import { makeStyles } from '@material-ui/core/styles'
 
 export default function ContactForm() {
-    const [success, setSuccess] = useState(false);
+    const classes = useStyles()
 
-    useEffect(() => {
-      if ( window.location.search.includes('success=true') ) {
-        setSuccess(true);
-      }
-    }, []);
-
+    function formSubmit(e) {
+        e.preventDefault()
+        alert(`Thank you for contacting me! I'll get back to you as soon as I can.`)
+    }
+    
     return (
     <>
-<Container maxWidth='sm'>
- <h2>CONTACT</h2>
-   <Card>
      <form 
-       name="contact" 
-       method="POST" 
-       data-netlify="true" 
-      >
+        name="contact" 
+        method="POST" 
+        data-netlify="true" 
+        className={classes.root}
+     >
      <input type="hidden" name="form-name" value="contact" />
-        <TextField id="standard-basic" label="name" name="name" />
-        <TextField id="standard-basic" label="email" name="email" />
-        <TextField multiline id="standard-basic" label="message" name="message" />
-        <Button type="submit">Send</Button>
-       </form>
-      </Card>
-   </Container>
+        <TextField 
+            fullWidth
+            id="standard-basic" 
+            label="name" 
+            name="name" 
+            variant="outlined" 
+            margin="normal"
+            className={classes.textField}
+        />
+        <TextField 
+            fullWidth
+            id="standard-basic" 
+            label="email" 
+            name="email" 
+            variant="outlined" 
+            margin="normal"
+            className={classes.textField}
+        />
+        <TextField 
+            multiline 
+            fullWidth
+            variant="outlined"
+            margin="normal"
+            id="standard-basic" 
+            label="message" 
+            name="message"
+            className={classes.textField} 
+            rows={4}
+        />
+        <Button 
+            type="submit" 
+            variant="contained" 
+            color="secondary"
+            className={classes.button}
+            onClick={(e) => formSubmit(e)} 
+        >
+            Submit
+        </Button>
+    </form>
     </>
     )
 }
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+    },
+    textField: {
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+    },
+    button: {
+        marginTop: theme.spacing(1)
+    }      
+  }));
