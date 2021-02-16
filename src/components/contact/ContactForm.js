@@ -3,23 +3,17 @@ import React from 'react'
 export default function ContactForm() {
     return (
     <>
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
-            </p>
-            <p>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" />
-            </p>
-            <p>
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
-            </p>
-            <p>
+        <form name="contact" netlify>
+        <p>
+            <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+            <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
             <button type="submit">Send</button>
-            </p>
-        </form> 
+        </p>
+        </form>
     </>
     )
 }
