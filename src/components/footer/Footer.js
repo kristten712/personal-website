@@ -7,11 +7,11 @@ import Emoji from 'a11y-react-emoji'
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 import IconButton from '@material-ui/core/IconButton'
 
-export default function Footer({ handleScroll }) {
+export default function Footer() {
     const classes = useStyles()
 
     function scroll(id) {
-        window.scrollTo({top: 0, behavior: 'smooth'}) // figure out how to scroll smoothly
+        window.scrollTo({top: 0, behavior: 'smooth'}) 
     }
 
     return (

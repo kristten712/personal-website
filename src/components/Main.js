@@ -6,8 +6,10 @@ import { makeStyles } from '@material-ui/core/styles'
 import MenuBar from './menu/MenuBar'
 import Introduction from './introduction/Introduction'
 import TimelineContainer from './timeline/TimelineContainer'
-import MediumContainer from './projects/MediumContainer'
+import MediumContainer from './blog/MediumContainer'
 import Footer from './footer/Footer'
+import ProjectsContainer from './projects/ProjectsContainer'
+import ContactForm from './contact/ContactForm'
 
 export default function Main() {
     const appBarHeight = 50 // to standardize and pass to introduction & menubar components
@@ -35,8 +37,14 @@ export default function Main() {
             <Grid item xs={12} id='blog'>
                 <MediumContainer appBarHeight={appBarHeight} />
             </Grid>
+            <Grid item xs={12} id='projects'>
+                <ProjectsContainer />
+            </Grid>
+            <Grid item xs={12} id='projects'>
+                <ContactForm />
+            </Grid>
             <Grid item xs={12} id='blog' className={classes.footer}>
-                <Footer handleScroll={handleScroll} />
+                <Footer />
             </Grid>
         </Grid>  
     </>

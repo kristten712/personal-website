@@ -31,11 +31,15 @@ export default function MenuBar({ handleScroll, appBarHeight }) {
         win.focus()
     }
 
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'}) 
+    }
+
     return (
         <AppBar position="fixed" className={classes.appbar} style={{ "height": appBarHeight + 'px' }}>
             <Toolbar>
             <Box display='flex' flexGrow={1}>
-                <IconButton>
+                <IconButton onClick={() => scrollToTop()}>
                     <HomeIcon style={{ color: menuBarColor }} />
                 </IconButton>
                 {menuListItems.map((item, index) => (
@@ -95,7 +99,7 @@ const menuListItems = [
     },
     {
         name: 'Projects',
-        anchor: ''
+        anchor: 'projects'
     },
     {
         name: 'Blog',
