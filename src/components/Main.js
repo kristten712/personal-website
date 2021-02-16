@@ -40,7 +40,7 @@ export default function Main() {
             <Grid item xs={12} id='projects'>
                 <ProjectsContainer />
             </Grid>
-            <Grid item xs={12} id='projects'>
+            <Grid item xs={12} id='contact'>
                 <ContactContainer appBarHeight={appBarHeight} />
             </Grid>
             <Grid item xs={12} id='blog' className={classes.footer}>

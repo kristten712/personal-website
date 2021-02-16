@@ -71,6 +71,12 @@ export default function ContactForm() {
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            borderColor: "gray"
+          },
+          "& .MuiInputLabel-outlined.Mui-focused": {
+            color: "gray"
+          },
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
@@ -78,8 +84,12 @@ const useStyles = makeStyles((theme) => ({
     textField: {
         marginLeft: theme.spacing(1),
         marginRight: theme.spacing(1),
+        color: 'black'
     },
     button: {
-        marginTop: theme.spacing(1)
+        "&:hover": {
+            backgroundColor: "#F1B09D"
+          },
+        marginTop: theme.spacing(1),
     }      
   }));

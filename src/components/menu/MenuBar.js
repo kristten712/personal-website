@@ -90,10 +90,6 @@ const socialLinks = [
 
 const menuListItems = [
     {
-        name: 'Bio',
-        anchor: 'bio'
-    },
-    {
         name: 'Experience',
         anchor: 'experience'
     },
@@ -107,7 +103,7 @@ const menuListItems = [
     },
     {
         name: 'Contact',
-        anchor: ''
+        anchor: 'contact'
     }
 ]
 
