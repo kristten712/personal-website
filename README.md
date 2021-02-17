@@ -12,6 +12,9 @@ Material UI
 * `npm install @material-ui/core`
 * `npm install @material-ui/icons`
 
+[material-ui-image](https://www.npmjs.com/package/material-ui-image)
+* `npm install material-ui-image`
+
 [a11y-react-emoji](https://www.npmjs.com/package/a11y-react-emoji)
 * `npm install --save a11y-react-emoji`
 
