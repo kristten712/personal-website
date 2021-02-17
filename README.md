@@ -12,8 +12,14 @@ Material UI
 * `npm install @material-ui/core`
 * `npm install @material-ui/icons`
 
-TODO: finish writing this section
+[a11y-react-emoji](https://www.npmjs.com/package/a11y-react-emoji)
+* `npm install --save a11y-react-emoji`
 
+[react-fontawesome](https://www.npmjs.com/package/@fortawesome/react-fontawesome)
+* `npm i @fortawesome/react-fontawesome`
+
+[fortawesome/free-brands-svg-icons](https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons)
+* `npm i --save @fortawesome/free-brands-svg-icons`
 
 ## Feel free to fork or clone my repository
 1. clone the repo using `git clone`
