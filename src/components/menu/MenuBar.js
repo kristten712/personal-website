@@ -79,7 +79,7 @@ const socialLinks = [
         icon: <GitHubIcon style={{ color: menuBarColor }} />,
     },
     {
-        url: 'https://medium.com/@fang.kristen',
+        url: 'https://medium.com/@fang-kristen',
         icon:  <FontAwesomeIcon icon={faMedium} style={{ color: menuBarColor }} /> 
     },
     {
