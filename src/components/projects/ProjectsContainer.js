@@ -46,7 +46,7 @@ export default function FullWidthGrid({ appBarHeight }) {
   );
 }
 
-const bgcolor = '#cec0c0'
+const bgcolor = '#d7e0e0'
 
 const useStyles = makeStyles((theme) => ({
   root: {

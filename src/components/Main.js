@@ -34,11 +34,11 @@ export default function Main() {
             <Grid item xs={12} id='experience'>
                 <TimelineContainer />
             </Grid>
-            <Grid item xs={12} id='blog'>
-                <MediumContainer appBarHeight={appBarHeight} />
-            </Grid>
             <Grid item xs={12} id='projects'>
                 <ProjectsContainer />
+            </Grid>
+            <Grid item xs={12} id='blog'>
+                <MediumContainer appBarHeight={appBarHeight} />
             </Grid>
             <Grid item xs={12} id='contact'>
                 <ContactContainer appBarHeight={appBarHeight} />
