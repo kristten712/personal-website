@@ -4,6 +4,9 @@ import LaptopMacIcon from '@material-ui/icons/LaptopMac'
 import BarChartIcon from '@material-ui/icons/BarChart'
 import SchoolIcon from '@material-ui/icons/School'
 
+// project images
+import TypingHeaderImage from '../images/typing-header.png'
+
 const iconColor = 'white'
 
 export const bio = 
@@ -42,18 +45,26 @@ export const education = {
 }
 
 export const projects = [
+    // {
+    //   title: 'React Form Validation',
+    //   languages: 'React with Material UI',
+    //   description: 'Descripition here',
+    //   url: 'https://github.com/kristten712/',
+    //   demo: 'https://github.com/kristten712/',
+    // },
     {
-      title: 'React Form Validation',
-      languages: 'React with Material UI',
-      description: 'Descripition here',
-      url: 'https://github.com/kristten712/',
-      demo: 'https://github.com/kristten712/'
-    },
+        title: 'React Form Validation',
+        languages: 'React with Material UI',
+        description: 'Coming soon!',
+        url: 'https://github.com/kristten712/',
+        demo: 'https://github.com/kristten712/',
+      },
     {
       title: 'Classy Minimal B&W Header',
       languages: 'React with Material UI',
-      description: 'Potential header for a personal website with typing action',
-      url: 'https://github.com/kristten712/',
-      demo: 'https://github.com/kristten712/'
+      description: `Potential header for a personal website with typing action and automatic resize for the window of a visitors' screen`,
+      url: 'https://github.com/kristten712//typing-component',
+      demo: 'https://kristten712.github.io/typing-component/',
+      image: TypingHeaderImage
     },
   ]

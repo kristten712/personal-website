@@ -4,12 +4,12 @@ import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import Emoji from 'a11y-react-emoji'
-// import ProjectTile from './ProjectTile'
-// import { useSite } from '../../context/SiteContext'
+import ProjectTile from './ProjectTile'
+import { useSite } from '../../context/SiteContext'
 
 export default function FullWidthGrid({ appBarHeight }) {
   const classes = useStyles()
-  // const { projects } = useSite()
+  const { projects } = useSite()
 
   return (
     <div className={classes.root}>
@@ -26,19 +26,19 @@ export default function FullWidthGrid({ appBarHeight }) {
             </Box>
         </Grid>
 
-        <Grid item xs={12} sm={4} className={classes.gridItem}>
+        {/* <Grid item xs={12} sm={4} className={classes.gridItem}>
               <Grid container justify="center" alignItems="center">
                 Coming soon!
               </Grid>
-        </Grid>
+        </Grid> */}
 
-        {/* {projects.map((project, index) => (
+        {projects.map((project, index) => (
           <Grid key={index} item xs={12} sm={4} className={classes.gridItem}>
               <Grid container justify="center" alignItems="center">
                 <ProjectTile project={project} />
               </Grid>
           </Grid>
-        ))} */}
+        ))}
 
         <Grid item xs={12} style={{ "height": appBarHeight - 10 + 'px' }} />
       </Grid>
