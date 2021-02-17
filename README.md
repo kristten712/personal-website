@@ -1,5 +1,5 @@
 # Personal Website  
-This is the implementaion code for my personal website that features the following sections: 
+This is the implementaion code for my personal website that features the following: 
 * an introduction section with a profile photo
 * an overview of my experiences using the Material UI timeline component 
 * a section featuring my coding projects 
