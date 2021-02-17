@@ -28,7 +28,7 @@ export const workExperience = [
         icon: <BarChartIcon style={{ color: iconColor }} />
     },
     {
-        position: 'Investment Banking SUmmer Analyst, Healthcare M&A',
+        position: 'Investment Banking Summer Analyst, Healthcare M&A',
         company: 'Lazard',
         time: 'Jun 2019 - Aug 2019',
         description: `I ran analyses to help our biotech clients identify promising acquisition targets and built a broker-based financial model from scratch.`,
@@ -39,7 +39,7 @@ export const workExperience = [
 export const education = {
     degree: 'A.B. in Computational Neuroscience',
     university: 'Harvard University',
-    coursework: 'My favorite classes: Startup R&D (ES 95r), Computer Science (CS 50, 51), Statistics (Stat 110), Multivariable Calculus (Math21A), Linear Algebra (Mah 19B), Computational Neuroscience & Models of the Visual Cortex (Neuro 120, 130, 1401)',
+    coursework: 'My favorite classes: Startup R&D (ES 95r), Computer Science (CS 50, 51), Statistics (Stat 110), Multivariable Calculus (Math21A), Linear Algebra (Math 19B), Computational Neuroscience & Models of the Visual Cortex (Neuro 120, 130, 1401)',
     activities: 'Harvard Innovation Lab Venture fellow, Harvard-Radcliffe Orchestra principal flutist, MCB80x Course Assistant',
     icon: <SchoolIcon style={{ color: "white" }} />
 }
