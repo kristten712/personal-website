@@ -24,7 +24,7 @@ export const workExperience = [
         position: 'Co-founder',
         company: 'StrattyX (Y Combinator W20)',
         time: 'Jan 2019 - March 2020',
-        description: `I co-counded a fintech startup where we built a no-code tool for retail investors to create trading bots for their portfolio. I led our marketing and fundraising efforts.`,
+        description: `I co-founded a fintech startup where we built a no-code tool for retail investors to create trading bots for their portfolio. I led our marketing and fundraising efforts.`,
         icon: <BarChartIcon style={{ color: iconColor }} />
     },
     {
