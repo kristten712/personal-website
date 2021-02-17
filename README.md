@@ -11,7 +11,8 @@ This is the implementaion code for my personal website that features the followi
 Material UI 
 * `npm install @material-ui/core`
 * `npm install @material-ui/icons`
-// TODO
+
+TODO: finish writing this section
 
 
 ## Feel free to fork or clone my repository
