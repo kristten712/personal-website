@@ -6,6 +6,7 @@ import SchoolIcon from '@material-ui/icons/School'
 
 // project images
 import TypingHeaderImage from '../images/typing-header.png'
+import StudentRoster from '../images/student-roster.png'
 
 const iconColor = 'white'
 
@@ -45,19 +46,13 @@ export const education = {
 }
 
 export const projects = [
-    // {
-    //   title: 'React Form Validation',
-    //   languages: 'React with Material UI',
-    //   description: 'Descripition here',
-    //   url: 'https://github.com/kristten712/',
-    //   demo: 'https://github.com/kristten712/',
-    // },
     {
-        title: 'React Form Validation',
+        title: 'Student Roster for Educators',
         languages: 'React with Material UI',
-        description: 'Coming soon!',
-        url: 'https://github.com/kristten712/',
-        demo: 'https://github.com/kristten712/',
+        description: 'A prototype of a student roster management system with react-hook-forms',
+        url: 'https://github.com/kristten712/student-roster',
+        demo: 'https://kristten712.github.io/student-roster',
+        image: StudentRoster
       },
     {
       title: 'Classy Minimal B&W Header',
