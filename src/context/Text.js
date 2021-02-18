@@ -7,6 +7,7 @@ import SchoolIcon from '@material-ui/icons/School'
 // project images
 import TypingHeaderImage from '../images/typing-header.png'
 import StudentRoster from '../images/student-roster.png'
+import PersonalWebsite from '../images/personal-website.png'
 
 const iconColor = 'white'
 
@@ -46,6 +47,14 @@ export const education = {
 }
 
 export const projects = [
+    {
+        title: 'Personal Website',
+        languages: 'React with Material UI',
+        description: 'A personal website (this website!) to display your portfolio, experiences, and blog deployed on Netlify',
+        url: 'https://github.com/kristten712/personal-website',
+        demo: 'https://kristenfang.com',
+        image: PersonalWebsite
+      },
     {
         title: 'Student Roster for Educators',
         languages: 'React with Material UI',
