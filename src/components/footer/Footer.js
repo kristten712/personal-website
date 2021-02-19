@@ -32,7 +32,7 @@ export default function Footer() {
                     &nbsp;for this project
                 </Typography>
                 <Typography variant="caption" component="p">
-                    @2021 All right reserved
+                    @2021 All rights reserved
                 </Typography>
             </footer>
         </Box>
