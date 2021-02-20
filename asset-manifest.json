@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/personal-website/static/js/main.606eb11a.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.606eb11a.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.8427405a.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.8427405a.js.map",
+    "static/js/2.28f6ec19.chunk.js": "/personal-website/static/js/2.28f6ec19.chunk.js",
+    "static/js/2.28f6ec19.chunk.js.map": "/personal-website/static/js/2.28f6ec19.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/personal-website/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.28f6ec19.chunk.js.LICENSE.txt": "/personal-website/static/js/2.28f6ec19.chunk.js.LICENSE.txt",
+    "static/media/personal-website.0aa15823.png": "/personal-website/static/media/personal-website.0aa15823.png",
+    "static/media/profile.369e1e98.jpg": "/personal-website/static/media/profile.369e1e98.jpg",
+    "static/media/student-roster.db35b949.png": "/personal-website/static/media/student-roster.db35b949.png",
+    "static/media/typing-header.8e6c3410.png": "/personal-website/static/media/typing-header.8e6c3410.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8427405a.js",
+    "static/js/2.28f6ec19.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.606eb11a.chunk.js"
+  ]
+}
