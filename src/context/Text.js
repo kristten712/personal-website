@@ -12,14 +12,21 @@ import PersonalWebsite from '../images/personal-website.png'
 const iconColor = 'white'
 
 export const bio = 
-    "Hey, thanks for stopping by. I'm Kristen and an Associate Technical Product Manager at Cengage. Outside of work, I like to keep busy with my Medium Blog, YouTube channel, and React projects. See what I've been up to below."
+    "Hey, thanks for stopping by. I'm Kristen and a Product Manager at Cocoon. Outside of work, I like to keep busy with College Lead, hike the many trails in the SF Bay Area, and cook. See what I've been up to below."
 
 export const workExperience = [
+    {
+        position: 'Founding Product Manager & Business Operations',
+        company: 'Cocoon',
+        time: 'April 2021 - Present',
+        description: `I am the third business hire and first product manager at Cocoon. I researched & built operations for claims, compliance, and payroll and currently focus on product development.`,
+        icon: <LaptopMacIcon style={{ color: iconColor }} />
+    },
     {
         position: 'Associate Technical Product Manager',
         company: 'Cengage',
         time: 'May 2020 - Present',
-        description: `I am one of two TPMs responsible for Cengage's platforms for STEM disciplines. We serve ~2M students and instructors every year.`,
+        description: `I am one of three TPMs responsible for Cengage's platforms for STEM disciplines. We serve ~2M students and instructors every year.`,
         icon: <LaptopMacIcon style={{ color: iconColor }} />
     },
     {
